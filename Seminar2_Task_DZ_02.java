@@ -35,16 +35,3 @@ public class Seminar2_Task_DZ_02 {
         }
     }
 }
-
-// Запись в файл
-// public static void main(String[] args) {
-// try {
-// File file = new File("C:/Users/Начальник/JAVAA/task22.txt");
-// if (!file.exists())
-// file.createNewFile();
-// PrintWriter pw = new PrintWriter(file);
-// pw.println("Proverka");
-// pw.close();
-// } catch(IOException e) {
-// L.info("Error: " + e);
-// }
