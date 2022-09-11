@@ -9,6 +9,7 @@
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.ParsePosition;
 import java.util.logging.Logger;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -20,9 +21,12 @@ public class Seminar2_Task_DZ_02 {
         BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader("C:/Users/Начальник/JAVAA/task22.txt"));
-            String line; 
+            String line;
             while ((line = br.readLine()) != null) {
-                L.info(line);
+                String [] array = line.split(" ");
+                String stydent = array[0];
+                int otmetka = Integer.parseInt(array[1]);
+                System.out.printf("Ученик %s получил(а) сегодня %d. \n", stydent, otmetka);
             }
         } catch (IOException e) {
             L.info("Error: " + e);
